@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
+
+* { margin: 0; 
+    padding: 0; 
+    box-sizing: border-box; 
+}
+
+body{
+    width: 100%;
+    font-family: 'Lexend';
+}
+
+nav{
+    width: 100%;
+    padding: 10px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #F5EFE5;
+    border-bottom: 3px solid #653F2C;
+    position: sticky;
+    top: 0;
+    z-index: 1000; 
+}
+
+.nav-links ul, .nav-links li, .nav-links a{
+    display: flex;
+    gap: 20px;
+    text-decoration: none;
+    color: #653F2C;
+    font-weight: bold;
+    transition: transform 0.15s ease-out;
+}
+
+.nav-links a:hover{
+    transform: translateY(-3px);
+}
+
+.checkout-container {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #F5EFE5;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.checkout-container h1 {
+    color: #653F2C;
+    text-align: center;
+    margin-bottom: 30px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #E0C7A9;
+}
+
+.checkout-summary-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 25px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    background-color: #ffffff;
+}
+
+.checkout-summary-table thead th {
+    background-color: #653F2C;
+    color: #F5EFE5;
+    padding: 15px 10px;
+    text-align:center;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.checkout-summary-table tbody td {
+    padding: 12px 10px;
+    border-bottom: 1px solid #e0e0e0;
+    text-align: left;
+    color: #333;
+}
+
+.checkout-summary-table tbody td:nth-child(2),
+.checkout-summary-table tbody td:nth-child(3),
+.checkout-summary-table tbody td:nth-child(4) {
+    text-align: center;
+    width: 15%; 
+}
+
+.checkout-summary-table .summary-line td {
+    padding-top: 10px;
+    padding-bottom: 5px;
+    border-bottom: none;
+    font-size: 15px;
+    background-color: #f9f9f9;
+}
+
+
+.checkout-summary-table .total-line td {
+    padding: 18px 10px;
+    background-color: #E0C7A9;
+    border-top: 3px solid #653F2C;
+    font-size: 16px;
+    font-weight: bold;
+    color: #653F2C; 
+}
+
+.checkout-summary-table .total-line td:first-child {
+    text-align: left;
+}
+
+.checkout-actions {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.checkout-button {
+    padding: 15px 30px;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    background-color: #653F2C;
+    color: #F5EFE5;
+    font-family: "Lexend";
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease, transform 0.1s ease;
+}
+
+.checkout-button:hover {
+    background-color: #4a2f20;
+    transform: translateY(-2px);
+}

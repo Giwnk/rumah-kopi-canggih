@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
+
+* { margin: 0; 
+    padding: 0; 
+    box-sizing: border-box; 
+}
+
+body{
+    width: 100%;
+    font-family: 'Lexend';
+}
+
+nav{
+    width: 100%;
+    padding: 10px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #F5EFE5;
+    border-bottom: 3px solid #653F2C;
+    position: sticky;
+    top: 0;
+    z-index: 1000; 
+}
+
+.nav-links ul, .nav-links li, .nav-links a{
+    display: flex;
+    gap: 20px;
+    text-decoration: none;
+    color: #653F2C;
+    font-weight: bold;
+    transition: transform 0.15s ease-out;
+}
+
+.nav-links a:hover{
+    transform: translateY(-3px);
+}
+
+.philosophy-container, .journey-container, .value-comittment-container, .best-playlist-container{
+    margin: 30px 0;
+
+}
+
+.philosophy-container h1, .journey-container h1, .value-comittment-container h1, .best-playlist-container h1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #653F2C;
+    padding: 25px 0;
+}
+
+.desc-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 20px;
+
+}
+.desc-card{
+    background-color: #F5EFE5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 900px;
+    height: 200px;
+    gap: 10px;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+}
+
+.desc-card p{
+    padding: 20px;
+    text-align: justify;
+    color: #653F2C;
+}
+
+.journey-card-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 20px;
+    gap: 30px;
+    max-width: 1480px;
+    margin: 0 auto;
+}
+
+.journey-card{
+    background-color: #F5EFE5;
+    width: 250px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3px;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+}
+
+.journey-card h3, .journey-card h5{
+    color: #653F2C;
+    text-align: center;
+}
+
+.journey-card p{
+    color: #653F2C;
+    text-align: justify;
+    font-size: 14px;
+    padding: 15px;
+}
+
+.vc-card-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 20px;
+    gap: 30px;
+    max-width: 1480px;
+    margin: 0 auto;
+}
+
+.vc-card{
+    background-color: #F5EFE5;
+    width: 600px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+}
+
+.vc-card h2{
+    color: #653F2C;
+}
+
+.vc-card p{
+    color: #653F2C;
+    font-size: 14px;
+    padding: 20px;
+    text-align: justify;
+}
+
+.playlist-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer {
+    background-color: #653F2C;
+    color: #F5EFE5;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: auto;
+}
+
+.copyright {
+    margin-bottom: 10px;
+    font-size: 12px;
+}
+
+.contact-info {
+    font-style: normal;
+    line-height: 1.5;
+}
+
+footer a {
+    color: #F5EFE5;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+footer a:hover {
+    color: #E0C7A9;
+}
